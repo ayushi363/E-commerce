@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="icon" href="images/icon_ecom.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+    <body style="background-color: antiquewhite;">
+        <!--Header Div-->
+        <div id="header"></div>
+
+        <!--Cart Page-->
+        <div class="containar mt-4 px-5">
+            <!--Items in cart-->
+            <div class="row">
+                <div class="col-md-10 col-sm-12 col-lg-8 card m-auto mt-3" style="height: fit-content;">
+                    <div class="row ">
+                        <div class="card-header text-center">
+                            <h1>Items in cart</h1>
+                        </div>
+                    </div>
+                    <div class="row mt-4 mb-2">
+                        <div class="col-lg-4 col-md-6 col-sm-6"><img class="img-fluid" style="max-width: 300px; max-height: 250px;" src="images/women/red_dress.webp" alt="shopping"></div>
+    
+                        <div class="col-lg-3 col-md-5 col-sm-6 text-center">
+                            <div class="card-body">
+                            <h5 class="card-title">Red dress</h5>
+                            
+                            <p class="card-text mt-4">$15</p>
+                            
+                            <a class="btn btn-primary mt-4"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-8 mt-4">
+                            <button class="btn btn-primary"><i class="fa-solid fa-minus"></i></button>
+                            <input type="number" name="" id="" class="w-50">
+                            <button class="btn btn-primary"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-10 col-sm-12 card mx-auto mt-3">
+                    <div class="row">
+                        <div class="card-header text-center">
+                            <h1>Summary</h1>
+                        </div>
+                    </div>
+                    <!--Shipping code-->
+                    <div class="row">
+                        <div class="card-body">
+                            <p class="position-absolute text-start border-1">Cost</p>
+                            <p class="card-text text-end">$15</p>
+                            <p class="card-text position-absolute">Shipping</p>
+                            <p class="card-text text-end ">$5</p>
+                            <hr class="border-2 border-black border-opacity-100">
+                            <h5 class="card-title position-absolute">Total</h5>
+                            <h5 class="card-text text-end">$20</h5>
+                        
+                            <div class="text-center mt-4">
+                            <button class="btn btn-primary" style="align-items: center;">Checkout</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Footer Div-->
+        <div id="footer"></div>
+       
+        
+        <!--Js for link Dynamic header & Footer-->
+        <script src="bootstrap.bundle.min.js"></script>
+        <script src="fontAwesome.js"></script>
+        <script src="jquery-3.7.0.min.js"></script>
+        <script>
+            $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+            });
+        </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+/******************************************************* CSS For Login Page**************************************************/
+#loginForm{
+    /*margin-top: 10%;*/
+    /*height: 200px;*/
+    margin: 7%;
+}
+
+/********************************************************* CSS Of Header Page*******************************************************/
+#navbar ul li a.nav-link{
+    color: white;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /*remove the gap so it doesn't close*/
+}
+
+/**************************************************** CSS for all pages**************************************************************/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/****************************************************** CSS for footer page********************************************************/
+#footer div div ul li a{
+    text-decoration: none;
+}
+
+.textblack li a{
+    color: black;
+}
+/****************************************************** CSS for cards************************************************************/
+.card-body{
+    text-align: center;
+}
+
+.card-img-top{
+    height: 50vh;
+}
+
+.card{
+    max-height: 80vh;
+}
+
+/******************************************************* CSS for hover buttons**************************************************/
+.btn-primary:hover{
+
+    font-size: large;
+}
+
+/******************************************************* CSS for hovering login button and cart icon***************************************/
+.logcart:hover{
+    font-size: 20px;
+} 
+
+/***************************************************CSS for button of contact us page***************************************************/
+.btn-secondary:hover{
+    font-size: 20px;
+    background-color: brown;
+}

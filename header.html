@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Meta tags-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--links-->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/icon_ecom.png">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!--Title-->
+    <title>Header</title>
+</head>
+
+<body>
+
+
+    <div>
+
+        <!--**********************************************Header**********************************************************-->
+        <nav class="navbar navbar-expand-lg" style="background-color: antiquewhite;">
+            <div class="container-fluid">
+                <!--Logo-->
+                <a id="logo" class="navbar-brand mx-1" href="../index.html" style="font-family: 'Lobster', cursive;">
+                    <h2>Fashion Bazaar</h2>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <!--Search Box-->
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <div class=" input-group mx-auto my-3" style="max-width:500px">
+                        <input class="form-control me-.5" type="search" placeholder="Products Name, Category Name,etc."
+                            aria-label="Search"
+                            style="border-bottom-left-radius: 20px; border-top-left-radius: 0; border: 1px solid black;">
+                        <button class="btn btn-secondary" id="searchButton" type="submit"
+                            style="border-top-right-radius: 20px; border-bottom-right-radius: 0; border: 1px solid black;">Search</button>
+                    </div>
+
+                    <!--Login Button-->
+                    <a href="../Login.html"><button type="button" class="btn my-3 logcart"
+                            style="background-color: black; color:white;">Login</button></a>
+                    <!--Cart Icon-->
+                    <a href="../cart.html"><i class=" fa-solid fa-cart-shopping mx-4 fa-xl my-3 logcart"
+                            style="color:black;" id="cart"></i></a>
+
+                </div>
+            </div>
+        </nav>
+
+        <!--*********************************************Navbar**************************************************-->
+        <div id="navbar">
+
+
+            <ul class="nav justify-content-center bg-dark">
+                <li class="nav-item">
+                    <!--Home Page Link-->
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <!--All products page link-->
+                    <a class="nav-link" href="../all_products.html">All Products</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <!--Women with dropdown menu-->
+                    <a class="nav-link dropdown-toggle" href="../women.html" data-toggle="dropdown">Women</a>
+                    <div class="dropdown-menu" aria-labelledby="womenDropdown">
+                        <a class="dropdown-item" href="../womens/allProducts.html">All Products</a>
+                        <a class="dropdown-item" href="../womens/Dresses.html">Dresses</a>
+                        <a class="dropdown-item" href="../womens/pants.html">Pants</a>
+                        <a class="dropdown-item" href="../womens/skirts.html">Skirts</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <!--Men with dropdown menu-->
+                    <a class="nav-link dropdown-toggle" href="men.html" data-toggle="dropdown">Men</a>
+                    <div class="dropdown-menu" aria-labelledby="menDropdown">
+                        <a class="dropdown-item" href="../men/allproducts.html">All Products</a>
+                        <a class="dropdown-item" href="../men/shirts.html">Shirts</a>
+                        <a class="dropdown-item" href="../men/pant.html">Pants</a>
+                        <a class="dropdown-item" href="../men/hoodies.html">Hoodies</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <!--Kids page link-->
+                    <a class="nav-link" href="../kids.html">Kids</a>
+                </li>
+                <li class="nav-item">
+                    <!--Contact Us link-->
+                    <a class="nav-link" href="../contact.html">Contact Us</a>
+                </li>
+            </ul>
+
+
+        </div>
+
+    </div>
+
+    <!--JS links-->
+    <script src="jquery-3.7.0.min.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="fontAwesome.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
